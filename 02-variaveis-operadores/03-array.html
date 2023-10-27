@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    
+        <h1>Manipulação de Array</h1>
+        <script>
+            // Declaração de uma array
+            let frutas;
+
+            frutas = ["maça", "banana", "laranja"];
+
+                let notas = [8,7,9,10];
+
+                document.write("elementos da array: ");
+                document.write(frutas);
+                document.write("<br>");
+
+                // Retornar um elemento do array nomeArray[indice]
+                let segundoElemento = frutas[1] ;
+                document.write(`segundo elemento: = ${segundoElemento}`);
+
+                // Alterar um valor do array nomeArray [indice] = novoValor
+                 frutas[1] = "goiaba";
+                document.write(`Segundo elemento da array após alteração ${frutas[1]}<br>`)
+
+                // Retorna a quantidade de elementos de uma array nomearra.length
+            document.write(`A array frutas possui ${frutas.length} elementos`)
+
+            // Adciona um elemento no final da array nomeArray.push("novo Valor");
+            frutas.push("uva");
+            document.write(`Elementos da Array: ${frutas} <br>`);
+            frutas.push("manga");
+            document.write(`Elementos da Array: ${frutas} <br>`);
+            
+            // Remover o último elemento da array nomeArray.pop()
+            let frutaRemovida =frutas.pop();
+            document.write(`A ${frutaRemovida} foi excluida da array frutas <br >`);
+            document.write(`Elementos da Array: ${frutas} <br>`);
+            
+             frutas.splice(2,0, "manga")    
+            document.write(`Elementos da Array: ${frutas} <br>`);
+            
+            // Remover um elemento de uma posição específica
+            frutas.splice(3,1);
+            document.write(`Elementos da Array: ${frutas} <br>`);
+            
+          </script>
+</body>
+
+</html>
