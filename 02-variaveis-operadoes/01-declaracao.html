@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="ptBr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Declarações de variáveis</title>
+    <title>Declaração de Variáveis</title>
 </head>
 
 <body>
     <script>
-    
         // Declaração de uma variável e inicialização com uma String
-        let nome = "Fulano";
+        let nome = "fulano";
 
-        // Declaração da variável 
+        // Deckaração da variável
         let idade;
 
         // Inicialização da variável
         idade = 18;
 
-        // Declaração de uma constante e inicialização com um valor de ponto flutuante (decimal)
+        // Declaração de uma contante e inicialização com um valor de ponto flutuante (decimal)
         const PI = 3.1415
 
-        document.write("Nome:" + nome+"<br/>");
-        document.write(`idade: ${idade}+<br/>`);
-        document.write(`valor de PI: ${PI}+<br/>`);
+        document.write("nome: " + nome + "<br/>");
+
+        // Interpolação de String
+        document.write(`idade: ${idade}  <br/>`);
+        document.write(`Valor de PI: ${PI}`);
+
     </script>
 
 </body>
